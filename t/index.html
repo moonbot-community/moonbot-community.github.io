@@ -2,28 +2,96 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<title>MoonBot · Discord</title>
+<meta name="theme-color" content="#1e1f6b">
+<title>Rejoins MoonBot sur Discord</title>
+<link rel="preconnect" href="https://static.ads-twitter.com">
+<link rel="icon" href="logo.png">
 <style>
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0f1117;color:#e8e8ef;font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-align:center}
-main{padding:24px}
-.btn{display:block;margin:22px auto 14px;padding:18px 28px;max-width:320px;border-radius:14px;background:#5865F2;color:#fff;font-weight:700;font-size:20px;text-decoration:none}
-.alt{color:#8ea2ff;font-size:15px}
-#log{margin-top:18px;font-size:12px;color:#777}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 18px;
+  font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:#f2f3f5;
+  background-color:#1b1464;
+  background-image:radial-gradient(120% 90% at 85% 100%,#1f7cf5 0%,rgba(31,124,245,0) 60%),
+             radial-gradient(90% 70% at 10% 0%,#3a0f7a 0%,rgba(58,15,122,0) 70%),linear-gradient(160deg,#1a0b5c,#2340c9);
+  background-attachment:fixed;
+  overflow-x:hidden}
+.sky{position:fixed;inset:0;pointer-events:none;background-image:
+  radial-gradient(2px 2px at 12% 18%,#fff9 50%,transparent 51%),radial-gradient(2px 2px at 78% 12%,#fff8 50%,transparent 51%),
+  radial-gradient(1.5px 1.5px at 30% 72%,#fff7 50%,transparent 51%),radial-gradient(2px 2px at 88% 64%,#fff8 50%,transparent 51%),
+  radial-gradient(1.5px 1.5px at 55% 30%,#fff6 50%,transparent 51%),radial-gradient(2px 2px at 8% 86%,#fff7 50%,transparent 51%),
+  radial-gradient(1.5px 1.5px at 66% 88%,#fff7 50%,transparent 51%),radial-gradient(2px 2px at 44% 8%,#fff8 50%,transparent 51%);
+  animation:tw 6s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.55}to{opacity:1}}
+.brand{position:fixed;top:18px;left:20px;display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:.2px;font-size:18px}
+.brand img{width:28px;height:28px;border-radius:8px}
+.card{position:relative;width:100%;max-width:440px;background:#2b2d31;border-radius:12px;padding:30px 26px 22px;
+  box-shadow:0 18px 60px rgba(0,0,0,.45);text-align:center;animation:pop .45s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes pop{from{transform:translateY(14px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+.logo{width:76px;height:76px;border-radius:22px;display:block;margin:0 auto 12px;box-shadow:0 6px 22px rgba(237,66,69,.35)}
+.invite{color:#b5bac1;font-size:15px;margin:0}
+h1{margin:4px 0 6px;font-size:26px;font-weight:800;letter-spacing:.2px}
+.stats{display:flex;justify-content:center;gap:16px;color:#b5bac1;font-size:14px;margin-bottom:18px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.on{background:#23a55a}.all{background:#80848e}
+.perks{list-style:none;margin:0 0 18px;padding:12px 14px;background:#232428;border-radius:10px;text-align:left}
+.perks li{display:flex;gap:10px;align-items:flex-start;padding:6px 0;font-size:15px;color:#dbdee1}
+.perks svg{flex:0 0 18px;margin-top:2px}
+.status{font-size:14px;color:#b5bac1;margin:0 0 10px;min-height:20px}
+.bar{height:4px;background:#1e1f22;border-radius:4px;overflow:hidden;margin:0 0 16px}
+.bar i{display:block;height:100%;width:0;background:#5865f2;border-radius:4px;transition:width 1.6s linear}
+.btn{display:block;width:100%;padding:13px 16px;border-radius:8px;font-weight:700;font-size:16px;text-decoration:none;margin-top:10px;transition:filter .15s}
+.btn:active{filter:brightness(.9)}
+.primary{background:#5865f2;color:#fff;box-shadow:0 0 0 0 rgba(88,101,242,.6);animation:pulse 2s ease-out infinite 1.8s}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(88,101,242,.55)}100%{box-shadow:0 0 0 14px rgba(88,101,242,0)}}
+.secondary{background:#4e5058;color:#fff}
+.legal{margin:16px 0 0;font-size:11.5px;color:#80848e}
 </style>
+<!-- Pixel X du compte pub @moonbot01 (rg3k5) -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','rg3k5');
+</script>
 </head>
 <body>
-<main>
-<p>Ouverture de l'appli Discord…</p>
-<a id="app" class="btn" href="#">Ouvrir Discord</a>
-<a id="web" class="alt" href="#">Ouvrir dans le navigateur</a>
-<p id="log"></p>
+<div class="sky"></div>
+<div class="brand"><img src="logo.png" alt=""> MoonBot</div>
+<main class="card">
+  <img class="logo" src="logo.png" alt="MoonBot">
+  <p class="invite">MoonBot t'invite à rejoindre</p>
+  <h1>MoonBot</h1>
+  <div class="stats"><span><i class="dot on"></i><b id="online">980</b> en ligne</span><span><i class="dot all"></i><b id="members">4 170</b> membres</span></div>
+  <ul class="perks">
+    <li><svg viewBox="0 0 20 20" width="18" height="18"><circle cx="10" cy="10" r="9" fill="#23a55a"/><path d="M6 10.5l2.6 2.6L14.5 7" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Bot 100 % cloud pour Dofus Rétro, Touch et Dofus 3</li>
+    <li><svg viewBox="0 0 20 20" width="18" height="18"><circle cx="10" cy="10" r="9" fill="#23a55a"/><path d="M6 10.5l2.6 2.6L14.5 7" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Gratuit jusqu'à 5 bots, même PC éteint</li>
+    <li><svg viewBox="0 0 20 20" width="18" height="18"><circle cx="10" cy="10" r="9" fill="#23a55a"/><path d="M6 10.5l2.6 2.6L14.5 7" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Scripts prêts à l'emploi et entraide entre joueurs</li>
+  </ul>
+  <p class="status" id="status">Redirection automatique vers ton appli Discord…</p>
+  <div class="bar"><i id="bar"></i></div>
+  <a class="btn primary" id="app" href="#">Ouvrir l'application</a>
+  <a class="btn secondary" id="web" href="#">Continuer dans le navigateur</a>
+  <p class="legal">MoonBot est un logiciel tiers indépendant, non affilié à Ankama.</p>
 </main>
 <script>
 (function () {
-  // PAGE DE TEST (non utilisée par les pubs) : essaie d'ouvrir l'APPLI Discord automatiquement, sinon bouton.
-  var code = (new URLSearchParams(location.search).get('i') || 'px2ZpjG63J').replace(/[^A-Za-z0-9]/g, '');
+  var ALLOWED = ['3WxVWekpUE', '6SCxhT64CU', '6vfztRA5Za', 'DNuVhBas44', 'F8UGW3vNmw', 'HHFZpFGgwK', 'HaNRteC9YW', 'K2KbAvSjBm', 'KmTnREpDEj', 'MCs4BNVq9y', 'MFWX7tvmKh', 'NvkxSmMYRZ', 'PPhPbnAcpQ', 'RDjS3NCfRQ', 'Wb9KT8HDyn', 'aFs2ymTjvz', 'bVyDR5csXG', 'c2SEAaVzrj', 'cgjsfkkXRY', 'drPtz76WBB', 'fpQfUjPNfM', 'geBTpUstCH', 'hE3ps3aEZt', 'kT5xBbfTB3', 'kVdeYyYnzV', 'w3msg8TXW2', 'px2ZpjG63J', 'Xyu6rgvTY9', 'QvJ635GASJ', 'RMqjYt66X8', 'aXmhtMqeQG', 'tegghwBReT', 'GuKsEUSAAT', 'wXawevJdZ6', 'SQRyHPq6kd', 'n4CKppFMun', 'AN3gQc9Jdn', 'nHB6RNrsJ9', 'VSn8U5EeJG', 'F53bATQP6Z', 's62GnAycUj', 'qXHapdSJMV', 'QDUtWjmUWf', 'j86nSnEE7A', 'AjvcMyuh6P', 'PgmN2Yygfb', 'T4QKJ7BdB2', 'hCsS62rwSG', 'W7TbCZ46BR', 'RvNp3bsRrU', 'Jke8xrZ59y', 'cgUPFgt5Xt', 'bDpZDPjJzN', 'CxZAZatrRD'];
+  var POOL = ["KJzvEKH7tT", "cr7enHPjeH", "GJzCWmHft2", "MCghxVafEC", "XQyf4q3W73", "wWF8by2RQ8", "aXfqdHHFVY", "KNFXPd9jRs", "QprWKnu66y", "QH75qxnpyN", "kDmVn2JEGF", "Xe5b6kbbJN", "FNkKcbUFcn", "XFwu2QztRb", "73BCBrKnyu", "B333FNKCHu", "5VaZ3WrCFS", "bXsFh2NR3S", "ja4aKnngGk", "7vmCtPem5B", "6p9AMMUHfV", "MZnsQSPcjJ", "B4HwWdhEHn", "yQhysq4ZWR", "PDRFZnvCvc", "ACQpzBVNbq", "sRVE7YYDq9", "H4vHkPHmSn", "fcMSRjqZKx", "3BMkfYc5QA", "CrkdJqdVGJ", "UEhq2WFwbZ", "WVCZEgpqY7", "c7N8FHvuQ2", "BYK8t2rkQh", "XVrPcNX2sg", "MZN98vpFTk", "yFSF4kHvuX", "EXptkGmpbF", "WGEQdvJaSR", "Ww8uY62bXN", "5WQRaWFPWz", "hEEvsBJSR4", "Jau5CmYvZe", "8UdHSKFYvH", "T8XPvTm7nk", "VvcTZeGDUd", "Sf2fg532Y8", "M5kzaEQUZZ", "Yt8A3eSMMs", "r2DxAkwQTz", "yuWSSjTPAq", "9z5UYd7Px5", "mbQvXswuAc", "YERW96yq9X", "79pgZbejAs", "dV6d9zqUKy", "vwnRguEZw9", "49S65uMfww", "Tkyc2n86NH", "6VrjMPVjzC", "pVMrzJgyJK", "hvM7HYrwkN", "85pKCWUgWH", "THh3zWYnD6", "APbz9aEfKR", "Hm5RCpk2J2", "qeV6cBcSny", "UfThcfPZ3Y", "w7EFYaG5TW", "RgbjTmvhby", "5SWKxKAMKz", "9zrhDcd5zJ", "mGAmPPsuuS", "kceX4UM8Yq", "Ky2UYF4rwk", "x5UvNRHj6j", "EkMaB5H9gS", "kkQkRDXq8t", "fevZcv9sXV", "vnUkNQQDcE", "rqz9EZyCdE", "H6ArqrapZ4", "JRRCDaBQWP", "39eMR55mCx", "cx8qXtBxbE", "aTUXsbjF7g", "CeVE6swrDE", "h9pXAKJF4e", "U2GkYDHm74", "cMDeJ27AEX", "EyqaJXTXzt", "5y8KvDzJfp", "fU4QwTw3a5", "TEDprvJXDw", "QAUPhtbnfU", "pmanDqSUWB", "AGYgAWxvf6", "r3KvzAZ3aS", "ha9mB8Jgvf", "SNYdWQhG3N", "DdaVvapHB6", "JY2huFnbgT", "pUNXpEFKsV", "6HVB2sSxFf", "n4EAzeq3rV", "jcGQaY7QkC", "vZ3jxeuHMY", "Agud7jGnPj", "QxMCaBJSeq", "3XRaaNH2ep", "UbKpS5X7Rm", "Fqa43j7Tye", "vt7KNURWM4", "AzmSHYMuWr", "Z6y8qDRm8G", "wQ5pVNKtQV", "M6cmnu2Rd2", "JhrJyEVUjc", "v92k5NRfBP", "K6cdmYzDr7", "3ExtP3jYwG", "zgDNtv73kp", "3hR9pYvFHt", "BbD7gBqp4Z", "PBE93QtfPw", "cGwGhF47xu", "udfmxUxwkH", "znck63rnFv", "76T84XV6em", "xrZVbstKmb", "WrMQH2XrG8", "yNWbhbJfv8", "zVJDTRJfgB", "Fq47cUGfTy", "ttu4uSB2pA", "MZw45hdg6J", "Z3VeCynKpk", "6n4mpZCU2y", "sMMkjT8qFk", "jUurYPx3Tq", "PhXHbM4YCd", "7rQUHCzmv9", "Ray7Yc3Vb5", "7aJeCVDZhb", "Ec4r7yBUBR", "xxgXznNM5x", "AVGYQ6En7q", "vqTrWG2Bm6", "Sqw9PC5kh7", "pGfZk4hUpx", "dMqrJ3j2x4", "ncBAaEBNK6", "HKTTd3GxfC", "XbykztwG2k", "KEvTzw9p9Y", "pBHKEXmWJY", "VRPgUGDhUj", "UWYUnp8Htq", "ZkpH6X6FG5", "JuasctXbAY", "wGxtYYJD5Y", "ThndTYPrPh", "5G2CCPPHCD", "q5apZGzQTN", "mr2bUhqpCx", "KEVps9aPau", "tXADwaYKV3", "Tzxz92K9kw", "pTgNNv2zGB", "r3B3Xy49Wn", "74FxRYdYfX", "kfwKKyzETb", "wSBBgrt6Rg", "s4zhpscrNh", "vQf5XXRrd5", "RksDUZMKVS", "ebRbsuVjeq", "KqvYAX6dKG", "WJFKRuWVhx", "dX8EWpRqFf", "8u63UcpBeN", "Tk4SYSjTqw", "XHZs5qP64X", "PTZpmcsxwX", "Ek9ReNM9hG", "DZPUdtuqQf", "puTpA9zKqq", "eyxa5UXq3W", "FFtb9tGHrf", "FJ9RtzBWEt", "e376KrPnTX", "NKj86PTZBB", "MbMJDQNcHy", "szHuzfZ25q", "Gb3pC44wwD", "E3hTQc4rRZ", "8eCVjdytZY", "S57hVugXex", "uUTNmQGArg", "tF5jcj5zgn", "hMJcn4B657", "PX9HC8Eh5q", "ECasf33mUq", "xn3Mb6dHZb", "Yr3V2gh6Gz", "45n2bDGMtf", "NEAdFTdTYg", "wrVKsfZGPP", "bwq6BbFANd", "6ASD5UNjJt", "C3k9Afuqru", "kvnXWx9qF2", "hgqyFcr87v", "FhCDSgQgsA", "49hxPUqRRh", "F7NawHnEZs", "ZBUJ4SVg7Z", "FauDDYxY5X", "mRFEWtfhsT", "6UT3Uy84j3", "2JGeGeAEDb", "z7SC54QEAa", "75RSJFY9Pt", "TXShVBwjDz", "k8VPYR3WdH", "xrj9rsmKdA", "vn2kEBnjtr", "NSbpgSKwMT", "yz5GEyQbts", "GUteaVhuGH", "dN89mPWcRd", "cffEptJdn8", "kFm9xW34YA", "zS6b3mNREy", "6bPfamTwTz", "zCc8uK6898", "vu66HjCWVD", "sR2DqRAWhy", "zGZ423C3w7", "VJmXXJRRV6", "mXPzjDW2AR", "aqzPeuNqCF", "BVyu8hrzV7", "MbEcjnmmwm", "byGgteWSc8", "EX5CjrpU7h", "4KqmKnSu6t", "QtCUnHKdD5", "bjwmE4UXrK", "sardSEBvPv", "gdEbB982xR", "NVbQ8mgpBn", "gP2kAHa7Nt", "9wZBwEukje", "Gu4FvncRMB", "jewBAaQnDS", "cSxKzBK5zr", "mrvKxM9sCa", "CbWErV6Rcb", "EuhWa4gDeX", "UhgyHvRK9K", "mbSYMHdDEk", "CCg3mu67G8", "Xx8dban3Cx", "5hUuRv8QM2", "5fWNnHacDn", "bfnFp58n49", "5HjT2BwJv7", "Dn6B3XHJkW", "PHWqC2Mtgs", "gvdg9UCG96", "uQSYV3RB4k", "6AncRSR6zA", "J3MzMBeAeE", "uAUZdsKc5z", "y22xM8py8C", "ubvVp6rkrm", "svXYbFkWBe", "Avsz9qusJS", "J5AaeU2uWz", "64QDxNM4HF", "WSSTSSES7p", "zXXA3Sfzw9", "wQWnHmDHtN", "ftcCvXMGkN", "QGSWW8NN3X", "3Uf3hcvZ69", "GW9nVZYq6a", "mrqG9h7pbe", "um5eG8Bqyf", "G4Nua4YhK6", "ApnUyU2p4Q", "eMYzcjWhd4", "bgRfbuz7hm", "AF64aS6Smz", "UB7xra5Aea", "4DpWMGxrD6", "AZ7EUsZxc9", "KXVezcxhhj"];
+  var LOG = 'https://discord.com/api/webhooks/1558575931159871498/x4X0XLBI5zzssgUdgzB6ptruvDa3QPFcxAuM2hw0E9WwK-encx9VcSKEO3SIaaEY2muH';
+  var params = new URLSearchParams(window.location.search);
+  var ad = params.get('i');
+  if (ALLOWED.indexOf(ad) === -1) ad = 'px2ZpjG63J';
+  var twclid = params.get('twclid') || '';
+  var code = ad;
+  if (/^[A-Za-z0-9_-]{8,256}$/.test(twclid)) {
+    code = POOL[Math.floor(Math.random() * POOL.length)];
+    try {
+      var body = new FormData();
+      body.append('payload_json', JSON.stringify({content: 'v1|' + new Date().toISOString() + '|' + twclid + '|' + ad + '|' + code, allowed_mentions: {parse: []}}));
+      fetch(LOG, {method: 'POST', mode: 'no-cors', keepalive: true, body: body}).catch(function () {});
+    } catch (e) {}
+  }
   var ua = navigator.userAgent || '';
   var android = /Android/i.test(ua), ios = /iPhone|iPad|iPod/i.test(ua);
   var web = 'https://discord.gg/' + code;
@@ -31,9 +99,20 @@ main{padding:24px}
           : ios ? 'discord://-/invite/' + code : web;
   document.getElementById('app').href = app;
   document.getElementById('web').href = web;
-  document.getElementById('log').textContent = (android ? 'Android' : ios ? 'iPhone' : 'ordinateur') + ' · ' + (/Twitter|TwitterAndroid/i.test(ua) ? 'navigateur de X' : 'navigateur');
-  // essai automatique (souvent bloqué sans toucher l'écran : le bouton reste là)
-  setTimeout(function () { window.location.href = app; }, 300);
+  // nombres en direct (API publique des invitations Discord)
+  fetch('https://discord.com/api/v10/invites/' + code + '?with_counts=true').then(function (r) { return r.json(); }).then(function (d) {
+    var f = function (n) { return Number(n).toLocaleString('fr-FR'); };
+    if (d.approximate_presence_count) document.getElementById('online').textContent = f(d.approximate_presence_count);
+    if (d.approximate_member_count) document.getElementById('members').textContent = f(d.approximate_member_count);
+  }).catch(function () {});
+  // barre de progression puis tentative d'ouverture automatique de l'appli
+  setTimeout(function () { document.getElementById('bar').style.width = '100%'; }, 60);
+  setTimeout(function () {
+    window.location.href = app;
+    setTimeout(function () {
+      document.getElementById('status').textContent = "L'appli ne s'est pas ouverte ? Touche « Ouvrir l'application ».";
+    }, 1200);
+  }, 1700);
 })();
 </script>
 </body>
