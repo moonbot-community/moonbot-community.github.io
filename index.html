@@ -25,7 +25,7 @@ twq('config','rg3k5');
 <script>
 (function () {
   // Invitations autorisées (une par pub) : la page ne redirige que vers le Discord MoonBot.
-  var ALLOWED = ['3WxVWekpUE', '6SCxhT64CU', '6vfztRA5Za', 'DNuVhBas44', 'F8UGW3vNmw', 'HHFZpFGgwK', 'HaNRteC9YW', 'K2KbAvSjBm', 'KmTnREpDEj', 'MCs4BNVq9y', 'MFWX7tvmKh', 'NvkxSmMYRZ', 'PPhPbnAcpQ', 'RDjS3NCfRQ', 'Wb9KT8HDyn', 'aFs2ymTjvz', 'bVyDR5csXG', 'c2SEAaVzrj', 'cgjsfkkXRY', 'drPtz76WBB', 'fpQfUjPNfM', 'geBTpUstCH', 'hE3ps3aEZt', 'kT5xBbfTB3', 'kVdeYyYnzV', 'w3msg8TXW2', 'px2ZpjG63J'];
+  var ALLOWED = ['3WxVWekpUE', '6SCxhT64CU', '6vfztRA5Za', 'DNuVhBas44', 'F8UGW3vNmw', 'HHFZpFGgwK', 'HaNRteC9YW', 'K2KbAvSjBm', 'KmTnREpDEj', 'MCs4BNVq9y', 'MFWX7tvmKh', 'NvkxSmMYRZ', 'PPhPbnAcpQ', 'RDjS3NCfRQ', 'Wb9KT8HDyn', 'aFs2ymTjvz', 'bVyDR5csXG', 'c2SEAaVzrj', 'cgjsfkkXRY', 'drPtz76WBB', 'fpQfUjPNfM', 'geBTpUstCH', 'hE3ps3aEZt', 'kT5xBbfTB3', 'kVdeYyYnzV', 'w3msg8TXW2', 'px2ZpjG63J', 'Xyu6rgvTY9', 'QvJ635GASJ', 'RMqjYt66X8', 'aXmhtMqeQG', 'tegghwBReT', 'GuKsEUSAAT', 'wXawevJdZ6', 'SQRyHPq6kd', 'n4CKppFMun', 'AN3gQc9Jdn', 'nHB6RNrsJ9', 'VSn8U5EeJG', 'F53bATQP6Z'];
   var code = new URLSearchParams(window.location.search).get('i');
   if (ALLOWED.indexOf(code) === -1) code = 'px2ZpjG63J';
   var target = 'https://discord.gg/' + code;
